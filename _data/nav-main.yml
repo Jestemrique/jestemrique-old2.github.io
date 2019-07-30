@@ -1,5 +1,7 @@
 - name: Home
   link: /
+- name: Articles
+  link: /articles.html
 - name: Categories
   link: /categories.html
 - name: About

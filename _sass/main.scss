@@ -15,8 +15,10 @@ $subtitle-weight: 300;
 $primary: hsl(0, 0%, 48%); //$grey;
 
 //links
-$link-color: hsl(0, 0%, 71%); //$grey-light;
+$link-color: hsl(0, 0%, 29%); //$grey-dark
+//$link-color: #ff0000;
 $link: $link-color;
+$link-hover: hsl(14, 100%, 53%); //$orange
 
 
 //Sections.
