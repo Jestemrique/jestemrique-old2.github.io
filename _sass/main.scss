@@ -1,0 +1,38 @@
+//My vars.
+$family-primary: "Assistant";
+$family-secondary: 'Rokkitt';
+$body-family: $family-secondary;
+$body-size: 1.5rem;
+
+
+//Titles.
+$title-family: $family-primary;
+$subtitle-family: $family-primary;
+$title-weight: 300;
+$subtitle-weight: 300;
+
+//Colors.
+$primary: hsl(0, 0%, 48%); //$grey;
+
+//links
+$link-color: hsl(0, 0%, 71%); //$grey-light;
+$link: $link-color;
+
+
+//Sections.
+$section-padding: 0.5rem 0.5rem;
+
+
+//Navbar
+$navbar-height: 0rem;
+$navbar-padding-vertical: 0rem;
+
+//Footer
+$footer-background-color: hsl(0, 0%, 0%); //$grey-dark;
+$footer-padding: 0.5rem 0.5rem 0.5rem;
+
+@import "bulma/bulma";
+
+//epr styles.
+@import "epr_styles/jestemrique";
+//@import "epr_styles/debug";

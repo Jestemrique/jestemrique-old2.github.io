@@ -1,0 +1,49 @@
+---
+layout: page_layout
+title: Categories
+---
+
+
+
+
+  {% for category  in site.categories %}
+        <ahref="#{{category[0] }}"> {{ category[0] | capitalize}}</a>
+        {{ category[1].size }}
+      
+  {% endfor %}
+
+<hr>
+
+{% for category  in site.categories %}
+            <a name="{{ category[0]}}"></a>{{category[0] | capitalize}} <sup ({{category[1].size}})></sup>
+            
+                {% for post  in category[1] %}
+                      <a href="{{ post.url }}">{{ post.title }}</a> - {{post.date | date_to_string}}
+                      <br>
+                {% endfor %}
+                <hr>    
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</section>
