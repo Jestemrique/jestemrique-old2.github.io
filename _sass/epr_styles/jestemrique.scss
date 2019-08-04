@@ -12,6 +12,24 @@ a{
   border-bottom: 1px dotted $link-color;
 }
 
+.a--nodecoration{
+  border: none;
+}
+
+.padding--left{
+  padding-left: 1rem;
+}
+
+
+//Posts
+.post__footer{
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  width:25%;
+  border-top: 1px dotted #999999;
+
+
+}
 
 
 

@@ -18,8 +18,12 @@ $primary: hsl(0, 0%, 48%); //$grey;
 $link-color: hsl(0, 0%, 29%); //$grey-dark
 //$link-color: #ff0000;
 $link: $link-color;
-$link-hover: hsl(14, 100%, 53%); //$orange
+//$link-hover: hsl(14, 100%, 53%); //$orange
+$link-hover:hsl(0, 0%, 14%);
 
+//Tags
+//hr
+$hr-margin: 0.5rem 0;
 
 //Sections.
 $section-padding: 0.5rem 0.5rem;
