@@ -6,24 +6,23 @@ title: Articles
 
 {% for post in site.posts %}
 
-  <h1 class="title is-size-4 is-marginless">
+  <h1 class="title is-size-2-desktop is-marginless">
     <a href="{{post.url}}">{{post.title}}</a>
   </h1>  
-  <p class="is-size-6 has-text-grey-light">{{ post.date | date_to_string }}</p>
+  
+  <p class="is-size-4-desktop has-text-grey-light">{{ post.date | date_to_string }}</p>
+  
   <div class="container content">
   {{ post.content | truncatewords: 75 }} 
   <hr >
 
-      <div class="tags">
+      <div class="tags ">
         {% for category in post.categories %}
-          <span class="tag">{{ category | capitalize }}</span>
+          <span class="tag title is-size-6-desktop">{{ category | capitalize }}</span>
         {% endfor %}
       </div>
-
-  
-
-    
 </div>
+
 {% endfor %} 
 
 

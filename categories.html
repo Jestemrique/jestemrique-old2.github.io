@@ -5,12 +5,12 @@ title: Categories
 
 <div class="field is-grouped is-grouped-multiline title ">
 {% for category  in site.categories %}
-<div class="control">
-<div class="tags has-addons">
-      <span class="tag ">
-            <a class="a--nodecoration" href="#{{category[0] }}"> {{ category[0] | capitalize}}</a>
+<div class="control ">
+<div class="tags has-addons ">
+      <span class="tag is-size-5-desktop">
+            <a class="a--nodecoration " href="#{{category[0] }}"> {{ category[0] | capitalize}}</a>
       </span>
-      <span class="tag">      
+      <span class="tag is-size-5-desktop">      
       {{ category[1].size }}
       </span>
 </div>
@@ -19,24 +19,16 @@ title: Categories
 </div>
 
 
-
-
 <hr>
 
-
-
 {% for category  in site.categories %}
-
-<a name="{{ category[0]}}"></a>
-<h2 class="title is-marginless">{{category[0] | capitalize}} </h2>
-<div class="padding--left">
-
-{% for post  in category[1] %}
-<h3>
-<a href="{{ post.url }}" class="title is-size-5 ">{{ post.title }}</a> - <span class="is-size-6 has-text-grey-light">{{post.date | date_to_string}}</span>
-</h3>
-{% endfor %}
-<hr>    
-</div>
-
+  <a name="{{ category[0]}}"></a><h2 class="title is-marginless is-size-2-desktop is-size-4-mobile">{{category[0] | capitalize}} </h2>
+  <div class="padding--left">
+    {% for post  in category[1] %}
+      <h3>
+        <a href="{{ post.url }}" class="title is-size-5 ">{{ post.title }}</a> - <span class="is-size-6 has-text-grey-light">{{post.date | date_to_string}}</span>
+      </h3>
+    {% endfor %}
+    <hr>    
+  </div>
 {% endfor %}

@@ -3,23 +3,21 @@ layout: base_layout
 ---
 
 
-
-
-
-
 <h2 class="title is-marginless">{{page.title}}</h2>
+
 <p class="has-text-grey-light">{{ page.date | date_to_string }}</p>
 
 <div class="content"></div>
-{{ content }}
+  {{ content }}
 </div>
+
 <div class="container post__footer">
-
-
-
     <p class="has-text-centered">    Share this post.    </p>
-    <div class="has-text-centered">
-        <p class="has-text-centered icon"> <i class="fas fa-home"></i> - <i class="fas fa-home"></i>    </p>
+    <div class=" container has-text-centered ">
+        <ul class="social-icons">
+            <li><i class="fab fa-twitter is-pulled-left"></i></li>
+            <li><i class="fab fa-facebook-square is-pulled-right"></i> </li>
+        </ul>
     </div>
 </div>
 
