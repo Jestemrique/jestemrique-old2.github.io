@@ -1,5 +1,9 @@
 ---
 layout: base_layout
 ---
+
+{% if  page.url  != '/' %}
     <h1 class="title is-size-1-desktop has-text-centered">{{page.title}}</h2>
-    {{ content }}
+{% endif %}
+
+{{ content }}
