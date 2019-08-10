@@ -4,5 +4,5 @@
   link: /articles.html
 - name: Categories
   link: /categories.html
-- name: About
-  link: /about.html
+# - name: About
+#   link: /about.html
